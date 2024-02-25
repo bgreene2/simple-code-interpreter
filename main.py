@@ -6,7 +6,7 @@ import time
 
 # Set parameters
 # ----------
-ollama_client_url = 'http://10.0.0.239:11434'
+ollama_client_url = 'http://localhost:11434'
 model = 'mixtral'
 # ----------
 
