@@ -26,20 +26,20 @@ Then the rest of the 'execute-tool' tag is filled in with ` output="{output}", e
 
 When all is said in done, the LLM's context will contain `<execute-tool name="python" input="{input}" output="{output}", errors="{errors}", timedOut="{timedOut}">`.
 
-## Instructions
-
-`pip install -r requirements.txt`
-
-`python main.py`
-
 ## Requirements
 
+* You need Python on your system.
 * You need access to an Ollama API.
 * That Ollama API needs to serve mixtral.
 
-You can install ollama on your system (https://ollama.com), then get mixtral with `ollama pull mixtral`.
+## Quickstart
 
-To run mixtral, you need about 32GB of memory.
+1. Install ollama on your system (https://ollama.com)
+2. Pull mixtral: `ollama pull mixtral`
+3. Install requirments: `pip install -r requirements.txt`
+4. Run program: `python main.py`
+
+To run mixtral on your computer, you need about 32GB of memory.
 
 You can edit the script to use a smaller LLM, but mixtral is the smallest one I've found so far that uses tools out of the box.
 
